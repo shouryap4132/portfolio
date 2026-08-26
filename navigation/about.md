@@ -20,7 +20,7 @@ My name is **Shourya Patel**. I was born in <img src="https://upload.wikimedia.o
 
 ### My Journey
 
-I've been fortunate to travel the world with my parents, experiencing different cultures and beautiful places. My favorite location has to be the <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Maldives.svg" alt="Flag of Maldives" class="inline-flag"> **Maldives** because of the warm, crystal-clear waters—there's something magical about that place!
+I've been fortunate to travel the world with my parents, experiencing different cultures and beautiful places. My favorite location has to be the <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Maldives.svg" alt="Flag of Maldives" class="inline-flag"> **Maldives** because of the warm, crystal-clear waters.I swear there's something magical about that place!
 
 ### Education
 
@@ -30,7 +30,7 @@ I've been fortunate to travel the world with my parents, experiencing different 
 
 ### Family
 
-I come from a close-knit family—it's just me, my mom, and my dad. We don't have any siblings, so it's the three of us, and I'm grateful for the adventures we've shared together.
+I come from a close-knit family: it's just me, my mom, and my dad. I don't have any siblings, so it's the three of us, and I'm grateful for the adventures we've shared together.
 
 ### Languages
 
