@@ -27,19 +27,74 @@ comments: true
     text-align: center;
     font-style: italic;
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .grid-item {
+    text-align: center;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .grid-item p {
+    margin: 5px 0;
+  }
 </style>
 
 
 ## About Me
 
-My name is **Shourya Patel**. I was born in <img src="https://en.wikipedia.org/wiki/File:Flag_of_Iowa.svg" alt="Flag of Iowa" class="inline-flag"> **Iowa**, but now I live in San Diego, <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" alt="Flag of California" class="inline-flag"> **California**. I'm a student with a passion for computer science and exploring the world.
+My name is **Shourya Patel**. I was born in <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Flag_of_Iowa.svg" alt="Flag of Iowa" class="inline-flag"> **Iowa**, but now I live in San Diego, <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" alt="Flag of California" class="inline-flag"> **California**. I'm a student with a passion for computer science and exploring the world.
 
 <img src="{{ site.baseurl }}/navigation/WIN_20260618_18_59_02_Pro.jpg" alt="Portrait of Shourya Patel" class="about-photo">
 <p class="about-photo-caption">A little about me.</p>
 
 ### My Journey
 
-I've been fortunate to travel the world with my parents, experiencing different cultures and beautiful places. My favorite location has to be the <img src="https://en.wikipedia.org/wiki/File:Flag_of_Maldives.svg" alt="Flag of Maldives" class="inline-flag"> **Maldives** because of the warm, crystal-clear waters.I swear there's something magical about that place!
+I've been fortunate to travel the world with my parents, experiencing different cultures and beautiful places. My favorite location has to be the <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Maldives.svg" alt="Flag of Maldives" class="inline-flag"> **Maldives** because of the warm, crystal-clear waters. I swear there's something magical about that place!
+
+Here are some places I have lived.
+
+<div id="grid_container" class="grid-container"></div>
+
+<script>
+  const container = document.getElementById("grid_container");
+  const flagsPath = "{{ site.baseurl }}/navigation/flags/";
+  const livingInTheWorld = [
+    { flag: "Flag_of_Iowa.svg.webp", greeting: "Hey", description: "Iowa - birthplace" },
+    { flag: "Flag_of_Hawaii.svg.webp", greeting: "Aloha", description: "Hawaii - 2 years" },
+    { flag: "Flag_of_India.svg.webp", greeting: "Namaste", description: "India - family heritage" },
+    { flag: "Flag_of_Maldives.svg.webp", greeting: "Hello", description: "Maldives - favorite place" }
+  ];
+
+  for (const location of livingInTheWorld) {
+    const gridItem = document.createElement("div");
+    gridItem.className = "grid-item";
+
+    const img = document.createElement("img");
+    img.src = flagsPath + location.flag;
+    img.alt = location.description + " flag";
+
+    const description = document.createElement("p");
+    description.textContent = location.description;
+
+    const greeting = document.createElement("p");
+    greeting.textContent = location.greeting;
+
+    gridItem.appendChild(img);
+    gridItem.appendChild(description);
+    gridItem.appendChild(greeting);
+    container.appendChild(gridItem);
+  }
+</script>
 
 
 ### Education
