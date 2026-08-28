@@ -62,8 +62,6 @@ Here are some places I have lived.
 
 My name is **Shourya Patel**. I was born in  **Iowa**, but now I live in San Diego, <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" alt="Flag of California" class="inline-flag"> **California**. I'm a student with a passion for computer science and exploring the world.
 
-<img src="{{ site.baseurl }}/navigation/WIN_20260618_18_59_02_Pro.jpg" alt="Portrait of Shourya Patel" class="about-photo">
-<p class="about-photo-caption">A little about me.</p>
 
 
 
@@ -110,8 +108,9 @@ My name is **Shourya Patel**. I was born in  **Iowa**, but now I live in San Die
 
 I come from a close-knit family: it's just me, my mom, and my dad. I don't have any siblings, so it's the three of us, and I'm grateful for the adventures we've shared together.
 
-<p class="about-photo-caption">My family and the people who make every adventure meaningful.</p>
 
+<img src="{{ site.baseurl }}/navigation/WIN_20260618_18_59_02_Pro.jpg" alt="Portrait of Shourya Patel" class="about-photo">
+<p class="about-photo-caption">A little about me.</p>
 ### Languages
 
 I'm fluent in two languages:
