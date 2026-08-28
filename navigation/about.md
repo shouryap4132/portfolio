@@ -52,7 +52,6 @@ I've been fortunate to travel the world with my parents, experiencing different 
 
 I come from a close-knit family: it's just me, my mom, and my dad. I don't have any siblings, so it's the three of us, and I'm grateful for the adventures we've shared together.
 
-<img src="{{ site.baseurl }}/images/about/familytree.png" alt="Family tree illustration" class="about-photo">
 <p class="about-photo-caption">My family and the people who make every adventure meaningful.</p>
 
 ### Languages
