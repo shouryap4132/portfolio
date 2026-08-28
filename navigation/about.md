@@ -41,8 +41,6 @@ My name is **Shourya Patel**. I was born in <img src="https://upload.wikimedia.o
 
 I've been fortunate to travel the world with my parents, experiencing different cultures and beautiful places. My favorite location has to be the <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Maldives.svg" alt="Flag of Maldives" class="inline-flag"> **Maldives** because of the warm, crystal-clear waters.I swear there's something magical about that place!
 
-<img src="{{ site.baseurl }}/images/about/surf.jpg" alt="A beach travel photo" class="about-photo">
-<p class="about-photo-caption">A reminder of why I love exploring new places.</p>
 
 ### Education
 
