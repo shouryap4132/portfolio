@@ -74,7 +74,8 @@ My name is **Shourya Patel**. I was born in <img src="https://upload.wikimedia.o
     { flag: "0/01/Flag_of_California.svg", greeting: "Hey", description: "California - forever" },
     { flag: "b/b9/Flag_of_Oregon.svg", greeting: "Hi", description: "Oregon - 9 years" },
     { flag: "b/be/Flag_of_England.svg", greeting: "Alright mate", description: "England - 2 years" },
-    { flag: "e/ef/Flag_of_Hawaii.svg", greeting: "Aloha", description: "Hawaii - 2 years" }
+    { flag: "e/ef/Flag_of_Hawaii.svg", greeting: "Aloha", description: "Hawaii - 2 years" },
+    { flag: "0/08/Flag_of_Maldives.svg", greeting: "Welcome", description: "Maldives - favorite place" }
   ];
 
   for (const location of livingInTheWorld) {
@@ -120,5 +121,9 @@ I'm fluent in two languages:
 ### My Interests
 
 I'm passionate about computer science and love exploring new technologies. My travels around the world have given me a global perspective, and I'm excited about applying my skills to solve real-world problems.
+
+### An Introduction to the Maldives
+
+The Maldives is an island nation in the Indian Ocean known for its bright blue lagoons, coral reefs, and beautiful beaches. It is my favorite place because its warm, crystal-clear waters make every visit feel peaceful and unforgettable.
 
 
