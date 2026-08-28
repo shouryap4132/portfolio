@@ -7,7 +7,7 @@ comments: true
 
 <style>
   .inline-flag {
-    height: 40px;
+    height: 80px;
     margin: 0 8px;
     vertical-align: middle;
     display: inline-block;
@@ -33,6 +33,9 @@ comments: true
 ## About Me
 
 My name is **Shourya Patel**. I was born in <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Flag_of_Iowa.svg" alt="Flag of Iowa" class="inline-flag"> **Iowa**, but now I live in San Diego, <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" alt="Flag of California" class="inline-flag"> **California**. I'm a student with a passion for computer science and exploring the world.
+
+<img src="{{ site.baseurl }}/navigation/WIN_20260618_18_59_02_Pro.jpg" alt="Portrait of Shourya Patel" class="about-photo">
+<p class="about-photo-caption">A little about me.</p>
 
 ### My Journey
 
