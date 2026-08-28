@@ -12,6 +12,21 @@ comments: true
     vertical-align: middle;
     display: inline-block;
   }
+
+  .about-photo {
+    display: block;
+    width: min(100%, 720px);
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 8px;
+  }
+
+  .about-photo-caption {
+    margin: -0.5rem auto 1.5rem;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+  }
 </style>
 
 
@@ -23,6 +38,9 @@ My name is **Shourya Patel**. I was born in <img src="https://upload.wikimedia.o
 
 I've been fortunate to travel the world with my parents, experiencing different cultures and beautiful places. My favorite location has to be the <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Maldives.svg" alt="Flag of Maldives" class="inline-flag"> **Maldives** because of the warm, crystal-clear waters.I swear there's something magical about that place!
 
+<img src="{{ site.baseurl }}/images/about/surf.jpg" alt="A beach travel photo" class="about-photo">
+<p class="about-photo-caption">A reminder of why I love exploring new places.</p>
+
 ### Education
 
 - 🏫 Elementary School: Monterey Ridge
@@ -32,6 +50,9 @@ I've been fortunate to travel the world with my parents, experiencing different 
 ### Family
 
 I come from a close-knit family: it's just me, my mom, and my dad. I don't have any siblings, so it's the three of us, and I'm grateful for the adventures we've shared together.
+
+<img src="{{ site.baseurl }}/images/about/familytree.png" alt="Family tree illustration" class="about-photo">
+<p class="about-photo-caption">My family and the people who make every adventure meaningful.</p>
 
 ### Languages
 
