@@ -49,6 +49,14 @@ comments: true
   }
 </style>
 
+### My Journey
+
+I've been fortunate to travel the world with my parents, experiencing different cultures and beautiful places. My favorite location has to be the <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Maldives.svg" alt="Flag of Maldives" class="inline-flag"> **Maldives** because of the warm, crystal-clear waters. I swear there's something magical about that place!
+
+Here are some places I have lived.
+
+<div id="grid_container" class="grid-container"></div>
+
 
 ## About Me
 
@@ -57,13 +65,7 @@ My name is **Shourya Patel**. I was born in <img src="https://upload.wikimedia.o
 <img src="{{ site.baseurl }}/navigation/WIN_20260618_18_59_02_Pro.jpg" alt="Portrait of Shourya Patel" class="about-photo">
 <p class="about-photo-caption">A little about me.</p>
 
-### My Journey
 
-I've been fortunate to travel the world with my parents, experiencing different cultures and beautiful places. My favorite location has to be the <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Maldives.svg" alt="Flag of Maldives" class="inline-flag"> **Maldives** because of the warm, crystal-clear waters. I swear there's something magical about that place!
-
-Here are some places I have lived.
-
-<div id="grid_container" class="grid-container"></div>
 
 <script>
   const container = document.getElementById("grid_container");
