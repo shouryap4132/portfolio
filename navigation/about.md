@@ -67,12 +67,12 @@ Here are some places I have lived.
 
 <script>
   const container = document.getElementById("grid_container");
-  const flagsPath = "{{ site.baseurl }}/navigation/flags/";
+  const wikipediaFlags = "https://upload.wikimedia.org/wikipedia/commons/";
   const livingInTheWorld = [
-    { flag: "Flag_of_Iowa.svg.webp", greeting: "Hey", description: "Iowa - birthplace" },
-    { flag: "Flag_of_Hawaii.svg.webp", greeting: "Aloha", description: "Hawaii - 2 years" },
-    { flag: "Flag_of_India.svg.webp", greeting: "Namaste", description: "India - family heritage" },
-    { flag: "Flag_of_Maldives.svg.webp", greeting: "Hello", description: "Maldives - favorite place" }
+    { flag: "0/01/Flag_of_California.svg", greeting: "Hey", description: "California - forever" },
+    { flag: "b/b9/Flag_of_Oregon.svg", greeting: "Hi", description: "Oregon - 9 years" },
+    { flag: "b/be/Flag_of_England.svg", greeting: "Alright mate", description: "England - 2 years" },
+    { flag: "e/ef/Flag_of_Hawaii.svg", greeting: "Aloha", description: "Hawaii - 2 years" }
   ];
 
   for (const location of livingInTheWorld) {
@@ -80,7 +80,7 @@ Here are some places I have lived.
     gridItem.className = "grid-item";
 
     const img = document.createElement("img");
-    img.src = flagsPath + location.flag;
+    img.src = wikipediaFlags + location.flag;
     img.alt = location.description + " flag";
 
     const description = document.createElement("p");
