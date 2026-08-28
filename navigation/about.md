@@ -69,13 +69,13 @@ My name is **Shourya Patel**. I was born in <img src="https://upload.wikimedia.o
 
 <script>
   const container = document.getElementById("grid_container");
-  const wikipediaFlags = "https://upload.wikimedia.org/wikipedia/commons/";
+  const localFlags = "{{ site.baseurl }}/navigation/flags/";
   const livingInTheWorld = [
-    { flag: "0/01/Flag_of_California.svg", greeting: "Hey", description: "California - forever" },
-    { flag: "b/b9/Flag_of_Oregon.svg", greeting: "Hi", description: "Oregon - 9 years" },
-    { flag: "b/be/Flag_of_England.svg", greeting: "Alright mate", description: "England - 2 years" },
-    { flag: "e/ef/Flag_of_Hawaii.svg", greeting: "Aloha", description: "Hawaii - 2 years" },
-    { flag: "0/08/Flag_of_Maldives.svg", greeting: "Welcome", description: "Maldives - favorite place" }
+    { flag: "Flag_of_Iowa.svg.webp", greeting: "Home", description: "Iowa" },
+    { flag: "Flag_of_India.svg.webp", greeting: "Namaste", description: "India" },
+    { flag: "Flag_of_Hawaii.svg.webp", greeting: "Aloha", description: "Hawaii" },
+    { flag: "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg", greeting: "Welcome", description: "California" },
+    { flag: "Flag_of_Maldives.svg.webp", greeting: "Welcome", description: "Maldives" }
   ];
 
   for (const location of livingInTheWorld) {
@@ -83,7 +83,7 @@ My name is **Shourya Patel**. I was born in <img src="https://upload.wikimedia.o
     gridItem.className = "grid-item";
 
     const img = document.createElement("img");
-    img.src = wikipediaFlags + location.flag;
+    img.src = location.flag.startsWith("http") ? location.flag : localFlags + location.flag;
     img.alt = location.description + " flag";
 
     const description = document.createElement("p");
