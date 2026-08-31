@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // button master file
 @import "common.scss";
 @import "filled.scss";
@@ -5,3 +6,12 @@
 @import "hacks-button.scss";
 @import "iridescent.scss";
 @import "runner-buttons.scss";
+=======
+// button master file
+@import "includes";
+@import "variant-filled";
+@import "states";
+@import "variant-calculator";
+@import "variant-iridescent";
+@import "variant-dragdrop";
+>>>>>>> upstream/main
