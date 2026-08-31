@@ -107,13 +107,17 @@ Everything for me revolves around family, culture, and the people who shaped my 
 - My family is close-knit, and I am grateful for the memories we have shared together.
 - I was born in Iowa and now live in California, and that mix of places has shaped who I am.
 - My love for travel and technology comes from the many experiences I have had across different places.
-- The gallery of pics will be added soon as I upload more family and life memories.
+- Here are some family memories from our time together.
 
 <comment>
-Gallery of Pics, coming soon...
+Gallery of family pics
 </comment>
 <div class="image-gallery">
-  <!-- Family photos will be uploaded soon -->
+  <img src="{{ site.baseurl }}/navigation/familypics/IMG_3091.jpg" alt="Family photo 1">
+  <img src="{{ site.baseurl }}/navigation/familypics/IMG_1565.jpg" alt="Family photo 2">
+  <img src="{{ site.baseurl }}/navigation/familypics/IMG_7990.jpg" alt="Family photo 3">
+  <img src="{{ site.baseurl }}/navigation/familypics/IMG_1746.jpg" alt="Family photo 4">
+  <img src="{{ site.baseurl }}/navigation/familypics/IMG_0890.jpg" alt="Family photo 5">
 </div>
 
 ### A Little More About Me
