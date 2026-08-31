@@ -5,124 +5,113 @@ permalink: /about/
 comments: true
 ---
 
-<style>
-  .inline-flag {
-    height: 80px;
-    margin: 0 8px;
-    vertical-align: middle;
-    display: inline-block;
-  }
+## As a conversation Starter
 
-  .about-photo {
-    display: block;
-    width: min(100%, 720px);
-    height: auto;
-    margin: 1rem auto;
-    border-radius: 8px;
-  }
-
-  .about-photo-caption {
-    margin: -0.5rem auto 1.5rem;
-    color: #666;
-    text-align: center;
-    font-style: italic;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-  }
-
-  .grid-item {
-    text-align: center;
-  }
-
-  .grid-item img {
-    width: 100%;
-    height: 100px;
-    object-fit: contain;
-  }
-
-  .grid-item p {
-    margin: 5px 0;
-  }
-</style>
-
-### My Journey
-
-I've been fortunate to travel the world with my parents, experiencing different cultures and beautiful places. My favorite location has to be the  **Maldives** because of the warm, crystal-clear waters. I swear there's something magical about that place!
+Hi, I'm **Shourya Patel**. I was born in **Iowa** and now live in **San Diego, California**. I love learning, exploring new places, and building things with technology.
 
 Here are some places I have lived.
 
-<div id="grid_container" class="grid-container"></div>
+<comment>
+Flags are made using Wikipedia images
+</comment>
 
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+    .grid-item {
+        text-align: center;
+    }
+    .grid-item img {
+        width: 100%;
+        height: 100px;
+        object-fit: contain;
+    }
+    .grid-item p {
+        margin: 5px 0;
+    }
 
-## About Me
+    .image-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        min-height: 140px;
+        padding: 8px 0;
+    }
 
-My name is **Shourya Patel**. I was born in  **Iowa**, but now I live in San Diego, <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" alt="Flag of California" class="inline-flag"> **California**. I'm a student with a passion for computer science and exploring the world.
+    .image-gallery img {
+        max-height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+</style>
 
-
-
+<div class="grid-container" id="grid_container"></div>
 
 <script>
-  const container = document.getElementById("grid_container");
-  const localFlags = "{{ site.baseurl }}/navigation/flags/";
-  const livingInTheWorld = [
-    { flag: "Flag_of_Iowa.svg.webp", greeting: "Home", description: "Iowa" },
-    { flag: "Flag_of_India.svg.webp", greeting: "Namaste", description: "India" },
-    { flag: "Flag_of_Hawaii.svg.webp", greeting: "Aloha", description: "Hawaii" },
-    { flag: "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg", greeting: "Welcome", description: "California" },
-    { flag: "Flag_of_Maldives.svg.webp", greeting: "Welcome", description: "Maldives" }
-  ];
+    var container = document.getElementById("grid_container");
+    var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
+    var living_in_the_world = [
+        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
+        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
+        {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 years"},
+        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"}
+    ];
 
-  for (const location of livingInTheWorld) {
-    const gridItem = document.createElement("div");
-    gridItem.className = "grid-item";
+    for (const location of living_in_the_world) {
+        var gridItem = document.createElement("div");
+        gridItem.className = "grid-item";
 
-    const img = document.createElement("img");
-    img.src = location.flag.startsWith("http") ? location.flag : localFlags + location.flag;
-    img.alt = location.description + " flag";
+        var img = document.createElement("img");
+        img.src = http_source + location.flag;
+        img.alt = location.flag + " Flag";
 
-    const description = document.createElement("p");
-    description.textContent = location.description;
+        var description = document.createElement("p");
+        description.textContent = location.description;
 
-    const greeting = document.createElement("p");
-    greeting.textContent = location.greeting;
+        var greeting = document.createElement("p");
+        greeting.textContent = location.greeting;
 
-    gridItem.appendChild(img);
-    gridItem.appendChild(description);
-    gridItem.appendChild(greeting);
-    container.appendChild(gridItem);
-  }
+        gridItem.appendChild(img);
+        gridItem.appendChild(description);
+        gridItem.appendChild(greeting);
+
+        container.appendChild(gridItem);
+    }
 </script>
 
+### Journey through Life
 
-### Education
+Here is what I did at those places.
 
 - 🏫 Elementary School: Monterey Ridge
 - 🏫 Middle School: Oak Valley
 - 🏫 High School: Del Norte
+- 🌍 Growing up with a love for travel, different cultures, and new experiences
+- 💻 Building a passion for computer science and technology
+- 🧭 Exploring life in California and beyond while continuing to learn and grow
 
-### Family
+### Culture, Family, and Fun
 
-I come from a close-knit family: it's just me, my mom, and my dad. I don't have any siblings, so it's the three of us, and I'm grateful for the adventures we've shared together.
+Everything for me revolves around family, culture, and the people who shaped my journey.
 
+- My family is close-knit, and I am grateful for the memories we have shared together.
+- I was born in Iowa and now live in California, and that mix of places has shaped who I am.
+- My love for travel and technology comes from the many experiences I have had across different places.
+- The gallery of pics will be added soon as I upload more family and life memories.
 
-<img src="{{ site.baseurl }}/navigation/WIN_20260618_18_59_02_Pro.jpg" alt="Portrait of Shourya Patel" class="about-photo">
-<p class="about-photo-caption">A little about me.</p>
-### Languages
+<comment>
+Gallery of Pics, coming soon...
+</comment>
+<div class="image-gallery">
+  <!-- Family photos will be uploaded soon -->
+</div>
 
-I'm fluent in two languages:
-- 🗣️ **English**
-- 🗣️ **Gujarati**
+### A Little More About Me
 
-### My Interests
-
-I'm passionate about computer science and love exploring new technologies. My travels around the world have given me a global perspective, and I'm excited about applying my skills to solve real-world problems.
-
-### An Introduction to the Maldives
-
-The Maldives is an island nation in the Indian Ocean known for its bright blue lagoons, coral reefs, and beautiful beaches. It is my favorite place because its warm, crystal-clear waters make every visit feel peaceful and unforgettable.
+I enjoy learning, exploring, and connecting with people from different backgrounds. My goal is to keep growing, keep traveling, and keep applying my interests in computer science and the world around me.
 
 
