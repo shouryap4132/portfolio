@@ -28,6 +28,11 @@ Flags are made using Wikipedia images
         width: 100%;
         height: 100px;
         object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background: #fff;
     }
     .grid-item p {
         margin: 5px 0;
@@ -55,10 +60,11 @@ Flags are made using Wikipedia images
     var container = document.getElementById("grid_container");
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
-        {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 years"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"}
+        {"flag": "d/d4/Flag_of_India.svg", "greeting": "Namaste", "description": "India"},
+        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii"},
+        {"flag": "7/74/Flag_of_the_Maldives.svg", "greeting": "Welcome", "description": "Maldives"},
+        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California"},
+        {"flag": "f/f7/Flag_of_Iowa.svg", "greeting": "Home", "description": "Iowa"}
     ];
 
     for (const location of living_in_the_world) {
