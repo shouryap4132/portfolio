@@ -58,13 +58,13 @@ Flags are made using Wikipedia images
 
 <script>
     var container = document.getElementById("grid_container");
-    var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
+    var localFlags = "{{ site.baseurl }}/navigation/flags/";
     var living_in_the_world = [
-        {"flag": "d/d4/Flag_of_India.svg", "greeting": "Namaste", "description": "India"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii"},
-        {"flag": "7/74/Flag_of_the_Maldives.svg", "greeting": "Welcome", "description": "Maldives"},
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California"},
-        {"flag": "f/f7/Flag_of_Iowa.svg", "greeting": "Home", "description": "Iowa"}
+        {"flag": "Flag_of_India.svg.webp", "greeting": "Namaste", "description": "India"},
+        {"flag": "Flag_of_Hawaii.svg.webp", "greeting": "Aloha", "description": "Hawaii"},
+        {"flag": "Flag_of_Maldives.svg.webp", "greeting": "Welcome", "description": "Maldives"},
+        {"flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California"},
+        {"flag": "Flag_of_Iowa.svg.webp", "greeting": "Home", "description": "Iowa"}
     ];
 
     for (const location of living_in_the_world) {
@@ -72,8 +72,8 @@ Flags are made using Wikipedia images
         gridItem.className = "grid-item";
 
         var img = document.createElement("img");
-        img.src = http_source + location.flag;
-        img.alt = location.flag + " Flag";
+        img.src = location.flag.startsWith("http") ? location.flag : localFlags + location.flag;
+        img.alt = location.description + " flag";
 
         var description = document.createElement("p");
         description.textContent = location.description;
