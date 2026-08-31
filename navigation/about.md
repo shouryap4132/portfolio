@@ -93,7 +93,7 @@ Flags are made using Wikipedia images
 
 Here is what I did at those places.
 
-- 🏫 Elementary School: Monterey Ridge
+- 🏫 Elementary School: Monterey Ridge (MRES)
 - 🏫 Middle School: Oak Valley
 - 🏫 High School: Del Norte
 - 🌍 Growing up with a love for travel, different cultures, and new experiences
