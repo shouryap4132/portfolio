@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+# Merge conflict marker removed
 import glob
 from nbconvert import MarkdownExporter
 from nbconvert.utils.exceptions import ConversionException
@@ -1144,7 +1144,7 @@ if __name__ == "__main__":
             sys.exit(1)
     else:
         convert_notebooks()
-=======
+# Merge conflict marker removed
 import glob
 from nbconvert import MarkdownExporter
 from nbconvert.utils.exceptions import ConversionException
@@ -2506,4 +2506,4 @@ if __name__ == "__main__":
             sys.exit(1)
     else:
         convert_notebooks()
->>>>>>> upstream/main
+# Merge conflict marker removed

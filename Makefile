@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ifeq (0,1)
 OST ?= localhost
 PORT ?= 4500
 LOG_FILE = /tmp/jekyll$(PORT).log
@@ -604,11 +604,12 @@ list-projects:
 
 %:
 	@:
-=======
+endif
 HOST ?= localhost
 PORT ?= 4500
 LOG_FILE = /tmp/jekyll$(PORT).log
 PYTHON := venv/bin/python3
+export PATH := $(shell gem env user_gemhome 2>/dev/null)/bin:$(PATH)
 
 SHELL = /bin/bash -c
 .SHELLFLAGS = -e
@@ -1233,4 +1234,3 @@ list-projects:
 
 %:
 	@:
->>>>>>> upstream/main
